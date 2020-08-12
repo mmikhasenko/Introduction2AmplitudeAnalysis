@@ -21,6 +21,12 @@ version = "0.4.5"
 [[Base64]]
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
 
+[[BinaryProvider]]
+deps = ["Libdl", "Logging", "SHA"]
+git-tree-sha1 = "ecdec412a9abc8db54c0efc5548c64dfce072058"
+uuid = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
+version = "0.5.10"
+
 [[Bzip2_jll]]
 deps = ["Libdl", "Pkg"]
 git-tree-sha1 = "5ccb0770e3d1c185a52e6d36e3ffb830639ed3d2"
@@ -204,6 +210,12 @@ deps = ["Test"]
 git-tree-sha1 = "098e4d2c533924c921f9f9847274f2ad89e018b8"
 uuid = "83e8ac13-25f8-5344-8a64-a9f2b223428f"
 version = "0.5.0"
+
+[[InstantiateFromURL]]
+deps = ["BinaryProvider", "Dates", "HTTP", "Markdown", "Pkg", "Suppressor", "Test"]
+git-tree-sha1 = "c4db55194f6bfd32d83a4aa0affa88e511ece48a"
+uuid = "43edad99-fa64-5e4f-9937-1c09a410b73f"
+version = "0.3.3"
 
 [[InteractiveUtils]]
 deps = ["Markdown"]
@@ -493,6 +505,11 @@ deps = ["Adapt", "DataAPI", "Tables"]
 git-tree-sha1 = "8099ed9fb90b6e754d6ba8c6ed8670f010eadca0"
 uuid = "09ab397b-f2b6-538f-b94a-2f83cf4a842a"
 version = "0.4.4"
+
+[[Suppressor]]
+git-tree-sha1 = "a819d77f31f83e5792a76081eee1ea6342ab8787"
+uuid = "fd094767-a336-5f1f-9728-57cf17d0bbfb"
+version = "0.2.0"
 
 [[TableTraits]]
 deps = ["IteratorInterfaceExtensions"]
