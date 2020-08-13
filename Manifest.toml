@@ -609,7 +609,7 @@ uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [[ThreeBodyDecay]]
 deps = ["Cuba", "Parameters", "PartialWaveFunctions", "QuadGK", "StaticArrays"]
-git-tree-sha1 = "f3ae5b0debd95b557818535fbbf4b075c3d46c56"
+git-tree-sha1 = "2de6f38eb52232149f553750b02678edfb4d2570"
 repo-rev = "refactor"
 repo-url = "https://github.com/mmikhasenko/ThreeBodyDecay.jl.git"
 uuid = "e6563dab-9ca1-5843-bde3-2ccf38d63843"
