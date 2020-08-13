@@ -1,0 +1,4 @@
+.ipynb_*
+.vscode
+*.root
+data_metapi*.txt
