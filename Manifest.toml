@@ -93,6 +93,18 @@ git-tree-sha1 = "81685fee51fc5168898e3cbd8b0f01506cd9148e"
 uuid = "d38c429a-6771-53c6-b99e-75d170b6e991"
 version = "0.5.4"
 
+[[Cuba]]
+deps = ["Cuba_jll", "LinearAlgebra"]
+git-tree-sha1 = "2b928680d07cbc5e59ba3d42ffceecbbfc25faed"
+uuid = "8a292aeb-7a57-582c-b821-06e4c11590b1"
+version = "2.1.0"
+
+[[Cuba_jll]]
+deps = ["Libdl", "Pkg"]
+git-tree-sha1 = "7bbbbdf8c5a0a9b270a8d266f95e00738f3abcce"
+uuid = "3bed1096-5ab2-53a1-92e2-6c1cc31d0f4b"
+version = "4.2.0+1"
+
 [[DataAPI]]
 git-tree-sha1 = "176e23402d80e7743fc26c19c681bfb11246af32"
 uuid = "9a962f9c-6df0-11e9-0e5d-c546b8b5ee8a"
@@ -588,6 +600,14 @@ version = "1.0.5"
 [[Test]]
 deps = ["Distributed", "InteractiveUtils", "Logging", "Random"]
 uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[[ThreeBodyDecay]]
+deps = ["Cuba", "Parameters", "PartialWaveFunctions", "QuadGK", "StaticArrays"]
+git-tree-sha1 = "9410afc986364d956269a208c64d901aa7b30846"
+repo-rev = "refactor"
+repo-url = "https://github.com/mmikhasenko/ThreeBodyDecay.jl.git"
+uuid = "e6563dab-9ca1-5843-bde3-2ccf38d63843"
+version = "0.3.0"
 
 [[TypedTables]]
 deps = ["SplitApplyCombine", "Tables", "Unicode"]
