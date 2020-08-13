@@ -364,9 +364,9 @@ uuid = "a63ad114-7e13-5084-954f-fe012c677804"
 
 [[NLSolversBase]]
 deps = ["DiffResults", "Distributed", "FiniteDiff", "ForwardDiff"]
-git-tree-sha1 = "ae1cbe7f1de1c443f44a5a3404140f11fe0d2610"
+git-tree-sha1 = "e39c69c2138a277955e6be0a4afc7d14e4948557"
 uuid = "d41bc354-129a-5804-8e4c-c37616107c6c"
-version = "7.6.2"
+version = "7.6.3"
 
 [[NaNMath]]
 git-tree-sha1 = "c84c576296d0e2fbb3fc134d3e09086b3ea617cd"
@@ -609,7 +609,7 @@ uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [[ThreeBodyDecay]]
 deps = ["Cuba", "Parameters", "PartialWaveFunctions", "QuadGK", "StaticArrays"]
-git-tree-sha1 = "9410afc986364d956269a208c64d901aa7b30846"
+git-tree-sha1 = "aa145e69a811a4e8eaf5d90a03050c15f7fbfcc5"
 repo-rev = "refactor"
 repo-url = "https://github.com/mmikhasenko/ThreeBodyDecay.jl.git"
 uuid = "e6563dab-9ca1-5843-bde3-2ccf38d63843"
