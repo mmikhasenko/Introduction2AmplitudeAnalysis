@@ -21,6 +21,13 @@ and our theory group from the Joint Physics Analysis Center (JPAC).
  * [Dalitz-plot decomposition](https://inspirehep.net/literature/1758460)
  * The first pentaquarks candidate [Pc(4450)](https://inspirehep.net/literature/1382595) and later [Pc(4312)](https://inspirehep.net/literature/1728691).
 
+
+### Material of the workshop
+ - A link to [indico page](https://indico.cern.ch/event/945453/) of the workshop on August 14, 202
+ - The slides are available from the [cernbox](https://cernbox.cern.ch/index.php/s/4f90LZKZy6Oaf51)
+ - White board notes are saved in the [`notes`](notes/etapi_PWA.pdf) folder
+ - Recording of the workshop might become eventially at the Summer program [webpage](https://summerstudent.web.cern.ch/seminars-and-tutorials-2020).
+
 ### More material
 Together with my colleagues from JPAC we organized a summer school on the reaction theory.
 Recorded lectures, exercise sheets, and a lot of learning material is available at [JPAC webpage](http://cgl.soic.indiana.edu/jpac/index.php).
