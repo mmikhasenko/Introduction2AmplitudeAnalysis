@@ -36,7 +36,7 @@ However, it is recommended to get a `julia+jupyther` installation at your local 
 It will guarantee a stable connection (the `binder` might cut long or unactive session) and allow you having the modifications saved.
 
 ### Running the notebooks in the clouds
-Click the link [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mmikhasenko/Introduction2AmplitudeAnalysis/master)
+Click the link [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mmikhasenko/Introduction2AmplitudeAnalysis/master).
 Once the docker image is ready, the set of notebooks will appear.
 
 ### Getting `julia+jupyther` locally:
@@ -57,8 +57,8 @@ Go to the repository forder.
 Instantiate to get all packages needed for tutorial installed
 ```python
 ; cd PATH_TO_THE_LOCAL_FOLDER
-activate .
-instantiate
+] activate .
+] instantiate
 ```
 The first installation might take a few minutes (btw, the list of dependences is in the `Project.toml` file)
 4. type ` using IJulia` (perhaps, `Backspace` before to get back to the REPL mode, the green text in the command line).
