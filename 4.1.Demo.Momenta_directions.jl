@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.11.4
+# v0.18.0
 
 using Markdown
 using InteractiveUtils
@@ -7,37 +7,36 @@ using InteractiveUtils
 # This Pluto notebook uses @bind for interactivity. When running this notebook outside of Pluto, the following 'mock version' of @bind gives bound variables a default value (instead of an error).
 macro bind(def, element)
     quote
+        local iv = try Base.loaded_modules[Base.PkgId(Base.UUID("6e696c72-6542-2067-7265-42206c756150"), "AbstractPlutoDingetjes")].Bonds.initial_value catch; b -> missing; end
         local el = $(esc(element))
-        global $(esc(def)) = Core.applicable(Base.get, el) ? Base.get(el) : missing
+        global $(esc(def)) = Core.applicable(Base.get, el) ? Base.get(el) : iv(el)
         el
     end
 end
+
+# ╔═╡ 2cabd8c0-dd60-11ea-20ba-0b257a3f3851
+begin
+	import Pkg
+	Pkg.add([
+		Pkg.PackageSpec(
+			url="https://github.com/mmikhasenko/ThreeBodyDecay.jl")])
+	using Plots
+	using ThreeBodyDecay
+end
+
+# ╔═╡ 7ee92c62-dd64-11ea-1f2f-7f318841e883
+theme(:wong, bottom_margin=3*Plots.PlotMeasures.mm)
 
 # ╔═╡ 31ebc880-dd66-11ea-1f06-57c94a4ef327
 md"""
 The momenta in the decay particle rest frame can be calculated from the kinematic invariants ``\{\sigma_i\}``
 """
 
-# ╔═╡ 2cabd8c0-dd60-11ea-20ba-0b257a3f3851
-begin
-	using InstantiateFromURL
-	github_project("mmikhasenko/Introduction2AmplitudeAnalysis")
-end
-
-# ╔═╡ 43a30ee0-dd60-11ea-243a-4586f93f64e7
-using ThreeBodyDecay
-
-# ╔═╡ 63e09410-dd61-11ea-18a9-17d951c50895
-using Plots
-
-# ╔═╡ 7ee92c62-dd64-11ea-1f2f-7f318841e883
-theme(:wong, bottom_margin=3*Plots.PlotMeasures.mm)
-
 # ╔═╡ 1a320280-dd62-11ea-1711-aff81641c932
 begin
-	p1mod(σs,ms) = sqrt(λ(ms.m0^2,ms.m1^2,σs.σ1))/(2*ms.m0)
-	p2mod(σs,ms) = sqrt(λ(ms.m0^2,ms.m2^2,σs.σ1))/(2*ms.m0)
-	p3mod(σs,ms) = sqrt(λ(ms.m0^2,ms.m3^2,σs.σ1))/(2*ms.m0)
+	p1mod(σs,ms) = sqrt(Kallen(ms.m0^2,ms.m1^2,σs.σ1))/(2*ms.m0)
+	p2mod(σs,ms) = sqrt(Kallen(ms.m0^2,ms.m2^2,σs.σ1))/(2*ms.m0)
+	p3mod(σs,ms) = sqrt(Kallen(ms.m0^2,ms.m3^2,σs.σ1))/(2*ms.m0)
 end;
 
 # ╔═╡ 4a366860-dd60-11ea-029e-cd5fd8e34fa3
@@ -92,8 +91,6 @@ end
 
 # ╔═╡ Cell order:
 # ╠═2cabd8c0-dd60-11ea-20ba-0b257a3f3851
-# ╠═43a30ee0-dd60-11ea-243a-4586f93f64e7
-# ╠═63e09410-dd61-11ea-18a9-17d951c50895
 # ╠═7ee92c62-dd64-11ea-1f2f-7f318841e883
 # ╟─31ebc880-dd66-11ea-1f06-57c94a4ef327
 # ╠═1a320280-dd62-11ea-1711-aff81641c932
