@@ -23,7 +23,7 @@ and our theory group from the Joint Physics Analysis Center (JPAC).
 
 
 ### Material of the workshop
- - A link to [indico page](https://indico.cern.ch/event/945453/) of the workshop on August 14, 202
+ - A link to [indico page](https://indico.cern.ch/event/945453/) of the workshop on August 14, 2020
  - The slides are available from the [cernbox](https://cernbox.cern.ch/index.php/s/4f90LZKZy6Oaf51)
  - White board notes are saved in the [`notes`](notes/etapi_PWA.pdf) folder
  - Recording of the workshop might become eventially at the Summer program [webpage](https://summerstudent.web.cern.ch/seminars-and-tutorials-2020).
