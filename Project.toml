@@ -24,4 +24,4 @@ TypedTables = "9d95f2ec-7b3d-5a63-8d20-e2491e220bb9"
 UpROOT = "69ce31c6-c38d-56c2-aa87-409d3de9f997"
 
 [compat]
-julia = "1.5"
+julia = "1.9.3"
